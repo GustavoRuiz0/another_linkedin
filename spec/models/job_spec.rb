@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Job, type: :model do
@@ -13,7 +15,7 @@ RSpec.describe Job, type: :model do
 
   context 'no valid because nil attributes' do
     it 'is not valid without a type' do
-      subject.type = nil
+      subject.job_type = nil
       expect(subject).to_not be_valid
     end
 
@@ -36,11 +38,16 @@ RSpec.describe Job, type: :model do
       subject.location = nil
       expect(subject).to_not be_valid
     end
+
+    it 'is not valid without a company' do
+      subject.company = nil
+      expect(subject).to_not be_valid
+    end
   end
 
   context 'is not valid because attributes so long' do
     it 'is not valid if type is too long' do
-      subject.type = 'E' * 31
+      subject.job_type = 'E' * 31
       expect(subject).to_not be_valid
     end
 
@@ -58,11 +65,16 @@ RSpec.describe Job, type: :model do
       subject.location = 'L' * 51
       expect(subject).to_not be_valid
     end
+
+    it 'is not valid if company is too long' do
+      subject.company = 'L' * 51
+      expect(subject).to_not be_valid
+    end
   end
 
-  context 'is not valid because so long attributes' do
+  context 'is not valid because so short attributes' do
     it 'is not valid if type is too short' do
-      subject.type = 'En'
+      subject.job_type = 'En'
       expect(subject).to_not be_valid
     end
 
@@ -73,6 +85,11 @@ RSpec.describe Job, type: :model do
 
     it 'is not valid if description is too short' do
       subject.description = 'D' * 29
+      expect(subject).to_not be_valid
+    end
+
+    it 'is not valid if compabt is too short' do
+      subject.description = 'D'
       expect(subject).to_not be_valid
     end
   end

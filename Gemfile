@@ -49,7 +49,7 @@ group :development, :test do
   gem 'rswag'
   gem 'rswag-specs', '~> 2.10', '>= 2.10.1'
   gem 'rubocop', '~> 1.64', '>= 1.64.1', require: false
-end 
+end
 
 group :test do
   gem 'shoulda-matchers', '~> 6.2'

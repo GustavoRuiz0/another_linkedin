@@ -2,6 +2,7 @@ import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
 import { FaArrowLeft, FaMapMarker } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { formatSalary } from '../support/moneyHelper';
 
 const JobPage = ({ deleteJob }) => {
   const navigate = useNavigate();
@@ -59,7 +60,7 @@ const JobPage = ({ deleteJob }) => {
                   Salary
                 </h3>
 
-                <p className='mb-4'>{job.salary} / Year</p>
+                <p className='mb-4'>{formatSalary(job.salary)} / Year</p>
               </div>
             </main>
 
