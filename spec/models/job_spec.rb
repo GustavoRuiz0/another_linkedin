@@ -65,11 +65,6 @@ RSpec.describe Job, type: :model do
       subject.location = 'L' * 51
       expect(subject).to_not be_valid
     end
-
-    it 'is not valid if company is too long' do
-      subject.company = 'L' * 51
-      expect(subject).to_not be_valid
-    end
   end
 
   context 'is not valid because so short attributes' do
@@ -88,8 +83,8 @@ RSpec.describe Job, type: :model do
       expect(subject).to_not be_valid
     end
 
-    it 'is not valid if compabt is too short' do
-      subject.description = 'D'
+    it 'is not valid if description is too short' do
+      subject.description = 'D' * 29
       expect(subject).to_not be_valid
     end
   end

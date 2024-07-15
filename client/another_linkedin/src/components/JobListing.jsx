@@ -19,7 +19,7 @@ const JobListing = (props) => {
       <div key={job.id} className="bg-white rounded-xl shadow-md relative">
         <div className="p-4">
           <div className="mb-6">
-            <div className="text-gray-600 my-2">{job.type}</div>
+            <div className="text-gray-600 my-2">{job.job_type}</div>
             <h3 className="text-xl font-bold">{job.title}</h3>
           </div>
           <div className="mb-5">{description.substring(0,30)}</div>
@@ -47,7 +47,7 @@ const JobListing = (props) => {
 JobListing.propTypes = {
   job: PropTypes.shape({
     id: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
+    job_type: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     salary: PropTypes.string.isRequired,

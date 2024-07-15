@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
-import jobsData from '../jobs.json'
 import JobListing from './JobListing';
 import PropTypes from 'prop-types';
 import Spinner from './Spinner';
 
 const JobsListing = ({ isHome = false }) => {
-  const [jobs, setJobs]       = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [jobs, setJobs]         = useState([]);
+  const [loading, setLoading]   = useState(true);
 
   useEffect(() => {
     const fetchJobs = async () => {
@@ -24,7 +23,8 @@ const JobsListing = ({ isHome = false }) => {
       }
     }
     fetchJobs();
-  }, [])
+  }, [isHome])
+
   return (
     <>
       <section className="bg-blue-50 px-4 py-10">
@@ -37,7 +37,7 @@ const JobsListing = ({ isHome = false }) => {
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {
-                  jobs.map((job) => (
+                  jobs.length >= 1 && jobs.map((job) => (
                     <JobListing job={job} key={job.id} />
                 ))}
               </div>

@@ -77,14 +77,13 @@ const JobPage = ({ deleteJob }) => {
                 <h3 className='text-xl'>Contact Email:</h3>
 
                 <p className='my-2 bg-indigo-100 p-2 font-bold'>
-                  {job.company.contactEmail}
+                  {job.company.contact_email}
                 </p>
 
                 <h3 className='text-xl'>Contact Phone:</h3>
 
                 <p className='my-2 bg-indigo-100 p-2 font-bold'>
-                  {' '}
-                  {job.company.contactPhone}
+                  {job.company.contact_phone}
                 </p>
               </div>
 

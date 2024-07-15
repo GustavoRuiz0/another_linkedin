@@ -12,7 +12,7 @@ class JobsController < ApplicationController
   end
 
   def create
-    @job = Job.create(jobs_params)
+    @job = Job.new(jobs_params)
 
     return render json: @job, status: :created if @job.save
 
@@ -38,6 +38,6 @@ class JobsController < ApplicationController
   private
 
   def jobs_params
-    params.require(:job).permit(:job_type, :title, :description, :salary, :location, :company)
+    params.require(:job).permit(:job_type, :title, :description, :salary, :location, :company_id)
   end
 end
