@@ -1,6 +1,25 @@
 {
   "RSpec": {
     "coverage": {
+      "/home/cyber/Documents/focus/another_linkedin/app/controllers/companies_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/cyber/Documents/focus/another_linkedin/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
       "/home/cyber/Documents/focus/another_linkedin/app/models/company.rb": {
         "lines": [
           null,
@@ -22,77 +41,6 @@
           null,
           null,
           1,
-          1,
-          null
-        ]
-      },
-      "/home/cyber/Documents/focus/another_linkedin/app/models/job.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/cyber/Documents/focus/another_linkedin/app/controllers/jobs_controller.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          null,
-          1,
-          5,
-          null,
-          5,
-          null,
-          3,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          0,
-          null,
-          null,
-          1,
-          null,
-          1,
-          5,
-          null,
-          null
-        ]
-      },
-      "/home/cyber/Documents/focus/another_linkedin/app/controllers/application_controller.rb": {
-        "lines": [
-          null,
-          null,
           1,
           null
         ]
@@ -121,12 +69,48 @@
         "branches": {
         }
       },
-      "/home/cyber/Documents/focus/another_linkedin/app/controllers/companies_controller.rb": {
+      "/home/cyber/Documents/focus/another_linkedin/app/controllers/jobs_controller.rb": {
         "lines": [
+          null,
+          null,
+          0,
+          0,
           0,
           0,
           0,
           null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
           0,
           0,
           0
@@ -160,8 +144,26 @@
         ],
         "branches": {
         }
+      },
+      "/home/cyber/Documents/focus/another_linkedin/app/models/job.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1721002677
+    "timestamp": 1721257205
   }
 }
