@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CompaniesController < ApplicationController
   def options_select
     @companies = Company.select(:id, :name)

@@ -43,8 +43,10 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'capybara'
   gem 'debug', platforms: %i[mri mswin mswin64 mingw x64_mingw]
+  gem 'devise-jwt'
   gem 'factory_bot_rails', '~> 6.2'
   gem 'ffaker', '~> 2.21'
+  gem 'jsonapi-serializer'
   gem 'pry', '~> 0.14.2'
   gem 'rspec-rails', '~> 6.0', '>= 6.0.3'
   gem 'rswag'
